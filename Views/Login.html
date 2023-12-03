@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/Login_estilo.css">
+    <title>Catequese</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="Usuário">Usuário:</label>
+            <input type="text" id="Usuário" name="Usuário" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email">
+
+            <label for="Senha">Senha:</label>
+            <input type="password" id="Senha" name="Senha" required>   
+            
+            <div id="mensagemSucesso" style="color: green; margin-bottom: 20px;"></div>
+            <div id="mensagemErro" style="color: red; margin-bottom: 20px;"></div>
+            
+            <button type="button" onclick="ValidarDados()">Entrar</button>
+            <p>ainda não tem uma conta? <a href="/Views/CriarConta.html">Crie uma.</a></p>
+        </form>
+    </div>
+    <script src="/FrontEnd/Login_front.js"></script>
+</body>
+</html>
